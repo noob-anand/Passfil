@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* Default (desktop / large screens) */
+#screen-wrapper {
+    width: 100vw;
+    height: 100vh;
+    transform: none;
+    transform-origin: center;
+}
+
+/* When screen width < 680px */
+@media (max-width: 679px) {
+    #screen-wrapper {
+        transform:
+            rotate(90deg) scale(calc(100vw / 680));
+
+        width: 935px;
+        height: 680px;
+
+        transform-origin: top left;
+
+        position: absolute;
+        top: 0;
+        left: 100%;
+    }
+
+    body {
+        overflow: hidden;
+    }
+}
