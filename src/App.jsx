@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './components/navbar.jsx'
 import Manager from './components/manager.jsx'
 import Footer from './components/footer.jsx'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 
 function App() {
   
@@ -16,7 +17,7 @@ function App() {
        </div>
         <Footer></Footer>
       </div>
-     
+      <SpeedInsights />
     </>
   )
 }
