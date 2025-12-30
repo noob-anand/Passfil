@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import './App.css'
+import { Analytics } from '@vercel/analytics/react'
 import Navbar from './components/navbar.jsx'
 import Manager from './components/manager.jsx'
 import Footer from './components/footer.jsx'
@@ -16,7 +16,7 @@ function App() {
        </div>
         <Footer></Footer>
       </div>
-     
+      <Analytics />
     </>
   )
 }
